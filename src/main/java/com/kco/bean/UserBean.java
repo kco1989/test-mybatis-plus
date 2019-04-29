@@ -19,8 +19,8 @@ public class UserBean {
 
     @TableId(type = IdType.NONE)
     private Long id;
-    private Integer age;
     private String email;
+    private Integer age;
     private String userName;
 
     @Tolerate
