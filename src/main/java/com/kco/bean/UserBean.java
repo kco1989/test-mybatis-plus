@@ -1,12 +1,11 @@
 package com.kco.bean;
 
-import com.baomidou.mybatisplus.annotation.*;
-import lombok.*;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Builder;
+import lombok.Data;
 import lombok.experimental.Tolerate;
-import org.springframework.data.elasticsearch.annotations.Field;
-
-import java.math.BigDecimal;
-import java.util.Date;
 
 /**
  * @author kco1989
@@ -20,8 +19,8 @@ public class UserBean {
 
     @TableId(type = IdType.NONE)
     private Long id;
-    private String email;
     private Integer age;
+    private String email;
     private String userName;
 
     @Tolerate
